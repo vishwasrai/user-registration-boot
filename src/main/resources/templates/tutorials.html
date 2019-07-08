@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Tutorial Portal</title>
+</head>
+
+<body>
+<form th:object="${user}">
+    <table>
+        <table>
+            <tr><td>JAVA</td></tr>
+            <tr><td>ASP.NET</td></tr>
+            <tr><td>PYTHON</td></tr>
+            <tr><td>C++</td></tr>
+            <tr>
+            </tr>
+            <table align="right">
+                <tr>
+                    <td><a th:href="@{/userportal}">User Portal</a></td>
+                    <td><a th:href="@{/logout}">Logout</a></td>
+                </tr>
+            </table>
+        </table>
+    </table>
+</form>
+</body>
+</html>

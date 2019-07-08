@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Registration Portal</title>
+</head>
+
+<body>
+<form th:object="${user}">
+    Welcome to User Registration Portal
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+        </tr>
+        <table align="right">
+            <tr>
+                <td><a th:href="@{/tutorials}">Tutorials</a></td>
+                <td><a th:href="@{/admin}">Admin</a></td>
+                <td><a th:href="@{/update}">Account Update</a></td>
+                <td><a th:href="@{/logout}">Logout</a></td>
+            </tr>
+        </table>
+    </table>
+</form>
+</body>
+</html>

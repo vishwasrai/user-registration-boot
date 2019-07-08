@@ -1,0 +1,35 @@
+.user{
+    color: blue;
+    font-size: 15px;
+}
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+.error {
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.msg {
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.validationDiv {
+    padding: 0px 0px 5px 0px;
+    margin: 8px 0px 0px 0px;
+}
+.validationError{
+     color: red; font-weight: bold;
+}

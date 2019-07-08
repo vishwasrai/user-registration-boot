@@ -1,0 +1,1 @@
+INSERT INTO users VALUES (10001, 'vrai@cognizant.com', 'vishwas', 'test', '514626');

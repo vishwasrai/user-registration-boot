@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Registration Login</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+<form th:action="@{/loginProcess}" th:object="${login}" method="POST">
+    <table align="center" bgcolor="#FFCA33">
+        <tr>
+            <td>Username:</td>
+            <td>
+                <input type="text" name="username" id="username" placeholder="UserName"/>
+            </td>
+            <td class="validationError" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                <input type="password" name="password" id="password" placeholder="Password"/>
+            </td>
+            <td class="validationError" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LdGeDcUAAAAALfoMZ2Ltv4EE6AHIYb8nSxhCRh_"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Sign In"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="msg" align="center">
+                    <p class="error" th:text="${message}"/>
+                </div>
+                <div class="msg" align="center">
+                    <p class="error" th:text="${error}"/>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><a th:href="@{/user-registration-boot}">Home</a></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
